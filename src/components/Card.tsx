@@ -24,13 +24,13 @@ const Card = ({ userData }: userDataProps) => {
                 <div className="card__avatar__header">
                     <h1>{userData?.name}</h1>
                     <div className="card__avatar__username">@{userData?.githubUsername}</div>
-                    <p>Joined {moment(userData.created_at).format('DD MMM YYYY')}</p>
+                    <p>Joined {moment(userData?.created_at).format('DD MMM YYYY')}</p>
                 </div>
             </div>
             <div className="card__content">
                 <div className="card__header">
                     <h1>{userData?.name}</h1>
-                    <p>Joined {moment(userData.created_at).format('DD MMM YYYY')}</p>
+                    <p>Joined {moment(userData?.created_at).format('DD MMM YYYY')}</p>
                 </div>
                 <div className="card__username">@{userData?.githubUsername}</div>
                 <p className="card__bio">{userData?.bio ? userData?.bio : 'This profile has no bio'}</p>
